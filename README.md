@@ -1,3 +1,30 @@
+# Parkinson's Disease Detection using XGBoost
+
+## Description
+
+This project uses Data Science methods to predict Parkinson's disease at an early stage. The core machine learning algorithm used is **XGBoost**. The data is preprocessed, including feature scaling using `StandardScaler` from the `sklearn` library.
+
+The main goal of the project is to achieve a prediction accuracy of over 95% on the test set.
+
+## Dataset
+
+The project uses the [UCI ML Parkinsons dataset](https://archive.ics.uci.edu/ml/datasets/Parkinsons). It contains a range of biomedical voice measurements, where one of the columns (`status`) indicates whether the subject has Parkinson's disease (1) or is healthy (0).
+
+## How to Run
+
+1.  Ensure you have Python and the required libraries installed (pandas, numpy, sklearn, xgboost, matplotlib, seaborn).
+3.  Launch the Jupyter Notebook `Detection_of_Parkinson's_disease.ipynb`.
+4.  Download [Dataset](https://archive.ics.uci.edu/ml/datasets/Parkinsons) to the root folder
+5.  Execute all cells in order to train the model and see the results.
+
+## Results
+
+The final `XGBClassifier` model, with tuned parameters and a fixed `random_state` for reproducibility, achieved the following accuracy on the test set (20% of the data):
+
+**Accuracy: 97.44%**
+
+---
+
 # Обнаружение болезни Паркинсона с помощью XGBoost
 
 ## Описание
@@ -22,30 +49,3 @@
 Финальная модель `XGBClassifier` с подобранными параметрами и зафиксированным `random_state` для воспроизводимости достигла следующей точности на тестовой выборке (20% от данных):
 
 **Точность: 97.44%**
-
----
-
-# Parkinson's Disease Detection using XGBoost
-
-## Description
-
-This project uses Data Science methods to predict Parkinson's disease at an early stage. The core machine learning algorithm used is **XGBoost**. The data is preprocessed, including feature scaling using `StandardScaler` from the `sklearn` library.
-
-The main goal of the project is to achieve a prediction accuracy of over 95% on the test set.
-
-## Dataset
-
-The project uses the [UCI ML Parkinsons dataset](https://archive.ics.uci.edu/ml/datasets/Parkinsons). It contains a range of biomedical voice measurements, where one of the columns (`status`) indicates whether the subject has Parkinson's disease (1) or is healthy (0).
-
-## How to Run
-
-1.  Ensure you have Python and the required libraries installed (pandas, numpy, sklearn, xgboost, matplotlib, seaborn).
-2.  Download
-3.  Launch the Jupyter Notebook `Detection_of_Parkinson's_disease.ipynb`.
-4.  Execute all cells in order to train the model and see the results.
-
-## Results
-
-The final `XGBClassifier` model, with tuned parameters and a fixed `random_state` for reproducibility, achieved the following accuracy on the test set (20% of the data):
-
-**Accuracy: 97.44%**
